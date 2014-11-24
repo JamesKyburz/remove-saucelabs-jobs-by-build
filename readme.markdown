@@ -40,6 +40,8 @@ script:
   travis_retry npm run test-browsers
 ```
 
+If all the retries fail, then restarting the current build will still delete the saucelabs jobs for the build.
+
 # install
 
 With [npm](https://npmjs.org) do:
