@@ -9,10 +9,35 @@ the incorrect svg badge.
 
 This utility removes the jobs for a given build.
 
-# usage
+Used best in combination with [travis retries option](http://docs.travis-ci.com/user/build-timeouts/)
 
+# command usage
+
+```bash
+remove-saucelabs-jobs-by-build $SAUCE_USERNAME $SAUCE_ACCESS_KEY $TRAVIS_BUILD
 ```
-usage: remove-saucelabs-jobs-by-build $SAUCE_USERNAME $SAUCE_ACCESS_KEY $TRAVIS_BUILD
+
+# with travis
+
+### `package.json`
+
+Add remove-saucelabs-jobs-by-build to scripts for example
+```json
+  "scripts": {
+    "test-browsers": "remove-saucelabs-jobs-by-build && zuul test/*.js"
+  }
+```
+
+### `.travis.yml`
+
+Setup number of retries for example 4.
+
+And run tests with retry
+
+```yaml
+bundler_args: --retry 4
+script:
+  travis_retry npm run test-browsers
 ```
 
 # install
