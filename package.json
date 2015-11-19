@@ -16,7 +16,7 @@
   "version": "1.0.2",
   "license": "MIT",
   "dependencies": {
-    "JSONStream": "1.0.6",
+    "JSONStream": "1.0.7",
     "hyperquest": "1.2.0",
     "through2": "2.0.0"
   }
