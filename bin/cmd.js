@@ -20,7 +20,7 @@ function getJobDetail(id, enc, cb) {
   var self = this;
   request.get(url + '/' + id).pipe(jsonstream.parse('build')).on('data', data);
   function data(jobBuild) {
-    if (jobBuild === build || build === '*') self.push(id);
+    if (jobBuild == build || build === '*') self.push(id);
     cb();
   }
 }
