@@ -10,7 +10,7 @@ var request = require('hyperquest');
 var jsonstream = require('JSONStream');
 var through = require('through2');
 
-request.get(url)
+request.get(url + '?limit=99999999')
   .pipe(jsonstream.parse('*.id'))
   .pipe(through(getJobDetail))
   .pipe(through(deleteJob))
