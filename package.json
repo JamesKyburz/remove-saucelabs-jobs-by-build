@@ -1,6 +1,7 @@
 {
   "name": "remove-saucelabs-jobs-by-build",
   "description": "saucelabs jobs cleanup remove",
+  "version": "1.0.5",
   "keywords": "saucelabs travis tests",
   "repository": {
     "type": "git",
@@ -13,11 +14,16 @@
   "bin": {
     "remove-saucelabs-jobs-by-build": "bin/cmd.js"
   },
-  "version": "1.0.5",
-  "license": "MIT",
+  "scripts": {
+    "prepublish": "standard"
+  },
   "dependencies": {
     "JSONStream": "1.0.7",
     "hyperquest": "1.2.0",
     "through2": "2.0.0"
-  }
+  },
+  "devDependencies": {
+    "standard": "5.4.1"
+  },
+  "license": "MIT"
 }
