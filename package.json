@@ -1,7 +1,7 @@
 {
   "name": "remove-saucelabs-jobs-by-build",
   "description": "saucelabs jobs cleanup remove",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "keywords": "saucelabs travis tests",
   "repository": {
     "type": "git",
