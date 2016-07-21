@@ -28,10 +28,11 @@ function deleteJob (id) {
   console.log('deleting job %s', id)
   var opt = {headers: {'Content-Length': 0}}
   request.delete(url + '/' + id, opt, function (err, res) {
-    if (!err && res && res.statusCode === 200) {
+    var statusCode = res ? res.statusCode : 0
+    if (!err && statusCode === 200) {
       console.log('deleted job %s', id)
     } else {
-      console.error('error deleting job %s %s', id, ('status:' + res ? res.statusCode : err))
+      console.error('error deleting job %s status:%s error:%s', id, statusCode, err)
     }
   })
 }
