@@ -34,5 +34,5 @@ function deleteJob (id) {
     } else {
       console.error('error deleting job %s status:%s error:%s', id, statusCode, err)
     }
-  })
+  }).end()
 }
