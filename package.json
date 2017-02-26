@@ -18,7 +18,7 @@
     "prepublish": "standard"
   },
   "dependencies": {
-    "JSONStream": "1.2.1",
+    "JSONStream": "1.3.1",
     "hyperquest": "2.1.2",
     "through2": "2.0.3"
   },
