@@ -1,5 +1,7 @@
 # remove-saucelabs-jobs-by-build
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/JamesKyburz/remove-saucelabs-jobs-by-build.svg)](https://greenkeeper.io/)
+
 remove-saucelabs-jobs-by-build
 
 Comes in handy when needing to rerun a ci build for example in [travis](https://travis-ci.org).
